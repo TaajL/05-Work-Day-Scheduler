@@ -10,6 +10,6 @@ $(document).ready(function () {
      var time = $(this).parent().attr("id");
      
      //Save to local storage 
-     localStorage.setItem(time, text);
+     localStorage.setItem(time, text)
 
 });
