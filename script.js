@@ -13,10 +13,20 @@ $(document).ready(function () {
      localStorage.setItem(time, text);
 });
 
-// Funntion to track time and update color
+    // Funntion to track time and update color
     var timeNow = dayjs().hour(); //get current hour 
 
-//loop over time blocks 
+    //loop over time blocks 
     $(".time-block").each(function () {
     var blockTime = parseInt($(this).attr("id").split("hour-")[1]);
-})
+
+    // check time adn classes for BG Color
+    if (blockTime< timeNow){
+        $(thsi).removeClass("future").removeClass("present").addClass("past");
+    } else if (blockTime === timeNow){
+    $(thsi).removeClass("future").removeClass("past").addClass("present");
+    } else {
+    $(thsi).removeClass("past").removeClass("present").addClass("future");
+    }
+    });
+}
