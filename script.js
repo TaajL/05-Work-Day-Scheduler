@@ -14,4 +14,9 @@ $(document).ready(function () {
 });
 
 // Funntion to track time and update color
-var timeNow = dayjs().hour(); //get current hour 
+    var timeNow = dayjs().hour(); //get current hour 
+
+//loop over time blocks 
+    $(".time-block").each(function () {
+    var blockTime = parseInt($(this).attr("id").split("hour-")[1]);
+})
