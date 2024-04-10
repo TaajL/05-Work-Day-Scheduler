@@ -4,7 +4,7 @@ $("#currentday").html(todayDate);
 
 $(document).ready(function () {
 // Save Button Evnt listener Click
-    $(".saveBtn").on("click, function() {
+    $(".saveBtn").on("click", function() {
     // get the text input and time value 
      var text = $(this).siblings(".description").val();
      var time = $(this).parent().attr("id");
@@ -13,8 +13,8 @@ $(document).ready(function () {
      localStorage.setItem(time, text);
 });
 
-    // Funntion to track time and update color
-    var timeNow = dayjs().hour(); //get current hour 
+ // Funntion to track time and update color
+ var timeNow = dayjs().hour(); //get current hour 
 
     //loop over time blocks 
     $(".time-block").each(function () {
@@ -30,3 +30,8 @@ $(document).ready(function () {
     }
     });
 }
+// Get items from local storage 
+ for (var i =8; i <= 17; i++) {
+    $("#hour" + i + ". description").val(localStorage.getItem("hour"+i));
+ }
+ 
