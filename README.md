@@ -3,6 +3,7 @@
 # Description 
 A simple calendar application that allows a user to save events for each hour of a typical working day (9am–5pm). This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
+Diployed link : https://taajl.github.io/05-Work-Day-Scheduler/
 
 # User Story
 AS AN employee with a busy schedule
