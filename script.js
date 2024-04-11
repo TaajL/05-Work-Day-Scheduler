@@ -1,6 +1,6 @@
 var todayDate = dayjs().format('dddd, MM D YYYY');
-$("#currentday").html(todayDate);
-    console.log()
+$("#currentDay").html(todayDate);
+    console.log($("#currentDay"))
 $(document).ready(function () {
     // Save Button Event listener Click
     $(".saveBtn").on("click", function() {
