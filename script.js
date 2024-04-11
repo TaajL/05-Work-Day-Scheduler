@@ -1,6 +1,6 @@
 var todayDate = dayjs().format('dddd, MM D YYYY');
 $("#currentday").html(todayDate);
-
+    console.log()
 $(document).ready(function () {
     // Save Button Event listener Click
     $(".saveBtn").on("click", function() {
@@ -35,5 +35,5 @@ $(document).ready(function () {
     }
 
     // Call the time tracker function
-    timeTracker();
+   // timeTracker();
 });
